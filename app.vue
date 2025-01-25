@@ -2,6 +2,21 @@
 import {useAsciiArt} from '~/composables/useAsciiArt';
 import StyleSelector from '~/components/StyleSelector.vue';
 
+// 添加 SEO 信息
+useHead({
+  title: 'ASCII Art Generator - Transform Text into ASCII Art',
+  meta: [
+    {
+      name: 'description',
+      content: 'Create beautiful ASCII art from text with multiple styles. A fun and creative way to transform your messages into pixel-perfect ASCII artwork.'
+    },
+    {
+      name: 'keywords',
+      content: 'ASCII art, text to ASCII, ASCII generator, pixel art, text art, ASCII converter'
+    }
+  ]
+})
+
 const {
   styles,
   inputText,

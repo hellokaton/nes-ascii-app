@@ -44,15 +44,12 @@ const {
         <!-- 输入区域 -->
         <div class="space-y-4">
           <h2 class="text-2xl font-bold flex items-center gap-2">
-            <span class="text-2xl">✏️</span>
-            输入你想说的话
+            <span class="text-2xl">🎬️</span>
+            场景描述
           </h2>
 
           <!-- 添加场景输入框 -->
           <div class="nes-field">
-            <label for="scene_field" class="block mb-2 font-bold">
-              <span class="text-xl">🎬</span> 场景描述
-            </label>
             <input
               v-model="sceneText"
               type="text"
@@ -61,6 +58,11 @@ const {
               placeholder="描述一下场景，比如：办公室、游戏世界、学校教室... (◕‿◕✿)"
             >
           </div>
+
+          <h2 class="text-2xl font-bold flex items-center gap-2">
+            <span class="text-2xl">✏️</span>
+            输入你想说的话
+          </h2>
 
           <div class="nes-field">
             <textarea

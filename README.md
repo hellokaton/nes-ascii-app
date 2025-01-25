@@ -6,11 +6,15 @@
 ![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)
 ![Nuxt](https://img.shields.io/badge/nuxt-3.x-00DC82.svg)
 
-### 🎨 Introduction
+## 🎨 Introduction
 
 ASCII Art Generator is a modern web application that transforms your text into beautiful ASCII art. With four unique styles and AI-powered generation, it creates visually appealing text decorations perfect for social media, chat messages, or any text-based platform.
 
-### ✨ Features
+## 📸 Preview
+
+![snipate_1.png](screenshots/snipate_1.png)
+
+## ✨ Features
 
 - **Multiple Artistic Styles**
 
@@ -32,18 +36,7 @@ ASCII Art Generator is a modern web application that transforms your text into b
   - One-click copy function
   - Real-time preview
 
-
-### 🌟 Preview
-
-```
-Cute Pets Style:
-ʕ •ᴥ•ʔ━━━━━━━━━━━━━━━━━ʕ •ᴥ•ʔ
-　　　🐱　Welcome　🐱　　　　
-ʕ •ᴥ•ʔ━━━━━━━━━━━━━━━━━ʕ •ᴥ•ʔ
-　　　　(=｀ω´=)　　　　　　　
-```
-
-### 🚀 Quick Start
+## 🚀 Quick Start
 
 1. Clone the repository:
 
@@ -69,7 +62,7 @@ cp .env.example .env
 pnpm dev
 ```
 
-### 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 - ⚡ Nuxt 3
 - 🎨 TailwindCSS
@@ -78,13 +71,13 @@ pnpm dev
 - 🌓 Color Mode
 - 📦 pnpm@9.10.0
 
-### 📝 License
+## 📝 License
 
 MIT License - see the [LICENSE](LICENSE) file for details
 
 ---
 
-### 📮 Contact
+## 📮 Contact
 
 If you have any questions or suggestions, feel free to:
 

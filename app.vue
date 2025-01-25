@@ -2,13 +2,13 @@
 import {useAsciiArt} from '~/composables/useAsciiArt';
 import StyleSelector from '~/components/StyleSelector.vue';
 
+const isLoading= true;
 const {
   styles,
   inputText,
   selectedStyle,
   sceneText,
   completion,
-  isLoading,
   generateText,
   copyToClipboard
 } = useAsciiArt()
@@ -32,7 +32,7 @@ const {
             <span class="text-2xl">✏️</span>
             输入你想说的话
           </h2>
-          
+
           <!-- 添加场景输入框 -->
           <div class="nes-field">
             <label for="scene_field" class="block mb-2 font-bold">
@@ -46,7 +46,7 @@ const {
               placeholder="描述一下场景，比如：办公室、游戏世界、学校教室... (◕‿◕✿)"
             >
           </div>
-          
+
           <div class="nes-field">
             <textarea
               v-model="inputText"
@@ -107,5 +107,10 @@ const {
 
 .nes-container.is-rounded::before {
   box-sizing: border-box;
+}
+
+/* 修复禁用按钮的阴影问题 */
+.nes-btn.is-disabled {
+  box-shadow: none !important;
 }
 </style>

@@ -2,13 +2,13 @@
 import {useAsciiArt} from '~/composables/useAsciiArt';
 import StyleSelector from '~/components/StyleSelector.vue';
 
-const isLoading= true;
 const {
   styles,
   inputText,
   selectedStyle,
   sceneText,
   completion,
+  isLoading,
   generateText,
   copyToClipboard
 } = useAsciiArt()

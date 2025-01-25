@@ -1,0 +1,177 @@
+@import "nes.css/css/nes.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "pix font";
+  src: url("/font/zpix.woff2") format("woff2");
+  font-style: normal;
+  /*unicode-range: U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+2A700-2B73F,*/
+  /*  U+2B740-2B81F, U+2B820-2CEAF;*/
+}
+
+* {
+  font-family: "pix font", serif;
+  font-weight: bold;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    --container-background: 0 0% 100%;
+    --container-border: 0 0% 0%;
+
+    --textarea-background: 0 0% 100%;
+    --textarea-border: 0 0% 0%;
+    --textarea-text: 0 0% 0%;
+
+    --error-button: 0 84% 60%;
+
+    --grid-color: 0 0% 95%;
+    --grid-size: 30px;
+    --line-size: 1px;
+
+    --dot-color: 0 0% 90%;
+    --dot-space: 24px;
+    --dot-size: 2px;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --container-background: 0 0% 9%;
+    --container-border: 0 0% 40%;
+
+    --textarea-background: 0 0% 9%;
+    --textarea-border: 0 0% 40%;
+    --textarea-text: 0 0% 100%;
+
+    --error-button: 0 84% 40%;
+
+    --grid-color: 0 0% 15%;
+
+    --dot-color: 0 0% 20%;
+    --dot-space: 24px;
+    --dot-size: 2px;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    background-image: radial-gradient(
+      circle at center,
+      hsl(var(--dot-color)) var(--dot-size),
+      transparent calc(var(--dot-size) + 1px)
+    );
+    background-size: var(--dot-space) var(--dot-space);
+    background-position: 0 0;
+    color: hsl(var(--foreground));
+    min-height: 100vh;
+    margin: 0;
+  }
+}
+
+@layer components {
+  .nes-container {
+    background-color: hsl(var(--container-background));
+    border-color: hsl(var(--container-border));
+    @apply transition-colors border-2;
+  }
+
+  .nes-textarea {
+    background-color: hsl(var(--textarea-background));
+    border-color: hsl(var(--textarea-border));
+    color: hsl(var(--textarea-text));
+    @apply transition-colors;
+  }
+
+  .nes-btn.is-error {
+    background-color: hsl(var(--error-button));
+    @apply hover:opacity-90 transition-opacity;
+  }
+
+  .dark .nes-icon.star::before {
+    @apply text-white;
+  }
+
+  .nes-container .title {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
+
+/* 响应式调整 */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+
+  .nes-container {
+    padding: 1rem;
+  }
+
+  .nes-btn {
+    padding: 0.5rem;
+  }
+}
+
+@layer base {
+  /* 基础文本颜色 */
+  body {
+    @apply text-black dark:text-white;
+  }
+
+  /* 标题和文本样式 */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  label,
+  p,
+  pre,
+  span {
+    @apply text-black dark:text-white;
+  }
+}
+
+@layer components {
+  /* 容器基础样式 */
+  .nes-container {
+    @apply bg-white dark:bg-neutral-800 border-black dark:border-neutral-600;
+  }
+
+  /* 文本基础样式 */
+  .nes-text {
+    @apply text-black dark:text-white;
+  }
+
+  /* 输入框基础样式 */
+  .nes-textarea {
+    @apply bg-white dark:bg-neutral-800 text-black dark:text-white border-black dark:border-neutral-600;
+  }
+
+  /* 按钮样式 */
+  .nes-btn.is-error {
+    @apply hover:opacity-90 transition-opacity;
+  }
+
+  .dark .nes-btn.is-error {
+    @apply bg-red-700;
+  }
+
+  /* 图标样式 */
+  .dark .nes-icon.star::before {
+    @apply text-white;
+  }
+
+  /* 容器标题样式 */
+  .nes-container .title {
+    @apply text-black dark:text-white bg-white dark:bg-neutral-900;
+  }
+}

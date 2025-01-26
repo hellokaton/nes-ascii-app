@@ -16,6 +16,15 @@ ASCII Art Generator is a modern web application that transforms your text into b
 
 🌈 **[Live Demo](https://nes-ascii-app.vercel.app)**
 
+## 🛠️ Tech Stack
+
+- ⚡ Nuxt 3
+- 🎨 TailwindCSS
+- 🎮 NES.css
+- 🤖 OpenAI API
+- 🌓 Color Mode
+- 📦 pnpm@9.10.0
+
 ## ✨ Features
 
 - **Multiple Artistic Styles**
@@ -63,15 +72,6 @@ cp .env.example .env
 ```bash
 pnpm dev
 ```
-
-## 🛠️ Tech Stack
-
-- ⚡ Nuxt 3
-- 🎨 TailwindCSS
-- 🎮 NES.css
-- 🤖 OpenAI API
-- 🌓 Color Mode
-- 📦 pnpm@9.10.0
 
 ## 📝 License
 

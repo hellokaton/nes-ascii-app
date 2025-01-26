@@ -14,6 +14,13 @@ ASCII 字符画生成器是一款现代化的网页应用，能够将文本转�
 
 🌈 **[在线演示](https://nes-ascii-app.vercel.app)**
 
+## 🛠️ 技术栈
+
+- ⚡ Nuxt 3
+- 🎨 TailwindCSS
+- 🎮 NES.css
+- 🤖 Vercel aisdk/vue
+
 ## ✨ 特色功能
 
 - **多种艺术风格**
@@ -61,13 +68,6 @@ cp .env.example .env
 ```bash
 pnpm dev
 ```
-
-### 🛠️ 技术栈
-
-- ⚡ Nuxt 3
-- 🎨 TailwindCSS
-- 🎮 NES.css
-- 🤖 Vercel aisdk/vue
 
 ## 📝 开源协议
 

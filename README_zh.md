@@ -71,7 +71,7 @@ pnpm dev
 
 ## 📝 开源协议
 
-MIT 协议 - 查看 [LICENSE](LICENSE) 文件了解详情
+[MIT](LICENSE)
 
 ---
 
